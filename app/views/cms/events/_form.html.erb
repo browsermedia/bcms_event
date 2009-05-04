@@ -1,0 +1,11 @@
+<%= f.cms_text_field :name %>
+<%= f.cms_date_picker :starts_on %>
+<%= f.cms_date_picker :ends_on %>
+<%= f.cms_text_field :location %>
+<%= f.cms_text_field :contact_email %>
+<%= f.cms_text_area :description %>
+<%= f.cms_text_field :more_info_url %>
+<%= f.cms_text_field :registration_url %>
+<%= f.cms_drop_down :category_id, categories_for('Event').map{|c| [c.path, c.id]} %>
+<%= f.cms_tag_list %>
+<%= f.cms_text_editor :body %>

@@ -456,3 +456,634 @@ Migrating to CreatePageRouteOptions (20090410193312)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_group_memberships")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/action_view/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/connection_adapters/abstract/schema_statements.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/errors.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_support/cache/file_store.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/hash.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/integer.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/nil.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/string.rb
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mDynamicView Load (0.3ms)[0m   [0mSELECT * FROM "dynamic_views" [0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mPageRoute Load (0.5ms)[0m   [0mSELECT * FROM "page_routes" ORDER BY page_routes.name[0m
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/action_view/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/connection_adapters/abstract/schema_statements.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/errors.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_support/cache/file_store.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/hash.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/integer.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/nil.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/string.rb
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mDynamicView Load (0.3ms)[0m   [0mSELECT * FROM "dynamic_views" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mPageRoute Load (0.5ms)[0m   [0mSELECT * FROM "page_routes" ORDER BY page_routes.name[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080815014337)
+Migrating to CreateDynamicViews (20080815014733)
+Migrating to CreatePages (20080815014735)
+Migrating to CreateContentTypeGroups (20080815014736)
+Migrating to CreateContentTypes (20080815014737)
+Migrating to CreateCategoryTypes (20080815014738)
+Migrating to CreateCategories (20080815014739)
+Migrating to CreateConnectors (20080815214539)
+Migrating to CreateHtmlBlocks (20080815220350)
+Migrating to CreateSections (20080819193254)
+Migrating to CreatePortlets (20080819213733)
+Migrating to CreateRedirects (20080917222336)
+Migrating to CreateAttachments (20080922203815)
+Migrating to CreateFileBlocks (20080922215729)
+Migrating to CreateGroupTypes (20081007190155)
+Migrating to CreateGroups (20081007190156)
+Migrating to CreatePermissions (20081008182341)
+Migrating to CreateGroupSections (20081009202349)
+Migrating to CreateSites (20081013181547)
+Migrating to CreateSectionNodes (20081020152051)
+Migrating to CreateLinks (20081031140510)
+Migrating to CreateTags (20081031140511)
+Migrating to CreateTaggings (20081031140512)
+Migrating to LoadSeedData (20081114172307)
+Migrating to CreateEmailMessages (20090130171546)
+Migrating to CreateTasks (20090212164201)
+Migrating to CreatePageRoutes (20090410193133)
+Migrating to CreatePageRouteOptions (20090410193312)
+Migrating to CreateEvents (20090504174621)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "version" integer, "lock_version" integer DEFAULT 0, "name" varchar(255), "starts_on" date, "ends_on" date, "location" varchar(255), "contact_email" varchar(255), "description" text, "more_info_url" varchar(255), "registration_url" varchar(255), "category_id" integer, "body" text, "published" boolean DEFAULT 'f', "deleted" boolean DEFAULT 'f', "archived" boolean DEFAULT 'f', "created_by_id" integer, "updated_by_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "event_versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "event_id" integer, "version" integer, "name" varchar(255), "starts_on" date, "ends_on" date, "location" varchar(255), "contact_email" varchar(255), "description" text, "more_info_url" varchar(255), "registration_url" varchar(255), "category_id" integer, "body" text, "published" boolean DEFAULT 'f', "deleted" boolean DEFAULT 'f', "archived" boolean DEFAULT 'f', "version_comment" varchar(255), "created_by_id" integer, "updated_by_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mCategoryType Exists (0.1ms)[0m   [0mSELECT "category_types".id FROM "category_types" WHERE (category_types.name = 'Event') LIMIT 1[0m
+  [4;36;1mCategoryType Exists (0.1ms)[0m   [0;1mSELECT "category_types".id FROM "category_types" WHERE ("category_types"."name" = 'Event') LIMIT 1[0m
+  [4;35;1mCategoryType Create (0.2ms)[0m   [0mINSERT INTO "category_types" ("name", "updated_at", "created_at") VALUES('Event', '2009-05-04 17:47:11', '2009-05-04 17:47:11')[0m
+  [4;36;1mContentTypeGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."name" = 'Event') LIMIT 1[0m
+  [4;35;1mContentTypeGroup Create (0.2ms)[0m   [0mINSERT INTO "content_type_groups" ("name", "updated_at", "created_at") VALUES('Event', '2009-05-04 17:47:11', '2009-05-04 17:47:11')[0m
+  [4;36;1mContentType Create (0.5ms)[0m   [0;1mINSERT INTO "content_types" ("name", "updated_at", "priority", "content_type_group_id", "created_at") VALUES('Event', '2009-05-04 17:47:11', 2, 3, '2009-05-04 17:47:11')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090504174621')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("attachment_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("attachments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("category_types")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("connectors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("content_type_groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("content_types")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("dynamic_view_versions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("dynamic_views")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("email_messages")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("event_versions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("file_block_versions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("file_blocks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("group_permissions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("group_sections")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("group_type_permissions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("group_types")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("groups")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("html_block_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("html_blocks")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("link_versions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("links")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("page_route_options")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("page_routes")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("page_versions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("permissions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("portlet_attributes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("portlets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("redirects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("section_nodes")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sections")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sites")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_group_memberships")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/action_view/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/base.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/connection_adapters/abstract/schema_statements.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/errors.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_support/cache/file_store.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/hash.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/integer.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/nil.rb
+~~ Loading extensions from /opt/ruby-enterprise-1.8.6-20090201/lib/ruby/gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/string.rb
+  [4;36;1mSQL (2.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mDynamicView Load (0.3ms)[0m   [0mSELECT * FROM "dynamic_views" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mPageRoute Load (0.5ms)[0m   [0mSELECT * FROM "page_routes" ORDER BY page_routes.name[0m
+
+
+Processing Cms::EventsController#index (for 127.0.0.1 at 2009-05-04 13:47:20) [GET]
+Redirected to http://localhost:3000/cms/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 36ms (DB: 0) | 302 Found [http://localhost/cms/events/]
+
+
+Processing Cms::SessionsController#new (for 127.0.0.1 at 2009-05-04 13:47:20) [GET]
+Rendering template within layouts/cms/login
+Rendering cms/sessions/new
+Rendered layouts/cms/_footer (0.7ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/cms/login]
+
+
+Processing Cms::SessionsController#create (for 127.0.0.1 at 2009-05-04 13:47:28) [POST]
+  Parameters: {"commit"=>"LOGIN", "authenticity_token"=>"Ph121fodb9eCM+2t19F8cpvOnyUuZC2Ng3QQ4sFQEYI=", "login"=>"cmsadmin", "password"=>"cmsadmin", "remember_me"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'cmsadmin') LIMIT 1[0m
+Redirected to http://localhost:3000/cms/events/
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/cms/login]
+
+
+Processing Cms::EventsController#index (for 127.0.0.1 at 2009-05-04 13:47:28) [GET]
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.9ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Event') LIMIT 1[0m
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" WHERE (((events.deleted = 'f'))) ORDER BY events.name LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (1.8ms)
+Rendered cms/blocks/_toolbar (5.2ms)
+Rendered layouts/cms/_head (2.6ms)
+Rendered layouts/_cms_toolbar (2.8ms)
+  [4;35;1mContentTypeGroup Load (0.4ms)[0m   [0mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;36;1mContentTypeGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 3) [0m
+  [4;35;1mContentType Load (0.4ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 164ms (View: 107, DB: 5) | 200 OK [http://localhost/cms/events/]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:29) [GET]
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.8ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 14ms (View: 4, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoryTypesController#index (for 127.0.0.1 at 2009-05-04 13:47:33) [GET]
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.8ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'CategoryType') LIMIT 1[0m
+  [4;36;1mCategoryType Load (1.0ms)[0m   [0;1mSELECT * FROM "category_types" ORDER BY category_types.name LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (1.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+Rendered layouts/cms/_head (1.2ms)
+Rendered layouts/_cms_toolbar (1.4ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.8ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 96ms (View: 83, DB: 6) | 200 OK [http://localhost/cms/category_types]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:34) [GET]
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.8ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 8ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoryTypesController#new (for 127.0.0.1 at 2009-05-04 13:47:36) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'CategoryType') LIMIT 1[0m
+  [4;35;1mCategoryType Load (0.2ms)[0m   [0mSELECT * FROM "category_types" ORDER BY category_types.id DESC LIMIT 1[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/new
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (1.0ms)
+Rendered cms/blocks/_hidden_fields (0.8ms)
+Rendered cms/form_builder/_cms_text_field (1.5ms)
+Rendered cms/category_types/_form (17.6ms)
+Rendered layouts/cms/_head (61.9ms)
+Rendered layouts/_cms_toolbar (0.8ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 118ms (View: 110, DB: 4) | 200 OK [http://localhost/cms/category_types/new]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:36) [GET]
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 8ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoriesController#index (for 127.0.0.1 at 2009-05-04 13:47:38) [GET]
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Category') LIMIT 1[0m
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.name LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (0.9ms)
+Rendered layouts/cms/_head (1.1ms)
+Rendered layouts/_cms_toolbar (0.8ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.5ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 34ms (View: 22, DB: 5) | 200 OK [http://localhost/cms/categories]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:38) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoriesController#new (for 127.0.0.1 at 2009-05-04 13:47:40) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Category') LIMIT 1[0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.id DESC LIMIT 1[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/new
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (1.0ms)
+Rendered cms/blocks/_hidden_fields (0.1ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "category_types" [0m
+  [4;35;1mCategoryType Load (0.2ms)[0m   [0mSELECT * FROM "category_types" [0m
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" WHERE (((categories.parent_id is null) AND ("categories".category_type_id = 1)) AND ("categories".category_type_id = 1)) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.id DESC LIMIT 1[0m
+  [4;36;1mCategoryType Load (0.5ms)[0m   [0;1mSELECT * FROM "category_types" ORDER BY name[0m
+Rendered cms/form_builder/_cms_drop_down (1.6ms)
+Rendered cms/form_builder/_cms_text_field (0.3ms)
+Rendered cms/categories/_form (11.0ms)
+Rendered layouts/cms/_head (1.2ms)
+Rendered layouts/_cms_toolbar (1.0ms)
+  [4;35;1mContentTypeGroup Load (0.3ms)[0m   [0mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;36;1mContentTypeGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 108ms (View: 98, DB: 6) | 200 OK [http://localhost/cms/categories/new]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:40) [GET]
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.8ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoriesController#create (for 127.0.0.1 at 2009-05-04 13:47:47) [POST]
+  Parameters: {"category"=>{"name"=>"Conferences", "category_type_id"=>"1"}, "commit"=>"Save", "authenticity_token"=>"Ph121fodb9eCM+2t19F8cpvOnyUuZC2Ng3QQ4sFQEYI="}
+  [4;35;1mUser Load (2.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.8ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Category') LIMIT 1[0m
+  [4;36;1mCategory Exists (0.1ms)[0m   [0;1mSELECT "categories".id FROM "categories" WHERE ("categories"."name" = 'Conferences' AND "categories".category_type_id = 1) LIMIT 1[0m
+  [4;35;1mCategory Create (0.3ms)[0m   [0mINSERT INTO "categories" ("name", "updated_at", "category_type_id", "parent_id", "created_at") VALUES('Conferences', '2009-05-04 17:47:47', 1, NULL, '2009-05-04 17:47:47')[0m
+Redirected to http://localhost:3000/cms/categories/1
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/cms/categories]
+
+
+Processing Cms::CategoriesController#show (for 127.0.0.1 at 2009-05-04 13:47:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Category') LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/show
+Rendered cms/blocks/_toolbar_for_member (3.2ms)
+Rendered cms/blocks/_toolbar (5.1ms)
+Rendered layouts/cms/_head (1.2ms)
+Rendered layouts/_cms_toolbar (0.8ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 40ms (View: 31, DB: 4) | 200 OK [http://localhost/cms/categories/1]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:48) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (1.6ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 10ms (View: 2, DB: 4) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::EventsController#index (for 127.0.0.1 at 2009-05-04 13:47:49) [GET]
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Event') LIMIT 1[0m
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM "events" WHERE (((events.deleted = 'f'))) ORDER BY events.name LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (0.7ms)
+Rendered cms/blocks/_toolbar (1.2ms)
+Rendered layouts/cms/_head (1.4ms)
+Rendered layouts/_cms_toolbar (1.1ms)
+  [4;36;1mContentTypeGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.6ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 3) [0m
+  [4;36;1mContentType Load (0.5ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 44ms (View: 18, DB: 6) | 200 OK [http://localhost/cms/events]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:50) [GET]
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::EventsController#new (for 127.0.0.1 at 2009-05-04 13:47:54) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.8ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Event') LIMIT 1[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE (events.deleted = 'f') ORDER BY events.id DESC LIMIT 1[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/new
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (0.9ms)
+Rendered cms/blocks/_hidden_fields (0.3ms)
+Rendered cms/form_builder/_cms_text_field (0.3ms)
+Rendered cms/form_builder/_cms_date_picker (1.2ms)
+Rendered cms/form_builder/_cms_date_picker (0.3ms)
+Rendered cms/form_builder/_cms_text_field (0.4ms)
+Rendered cms/form_builder/_cms_text_field (0.3ms)
+Rendered cms/form_builder/_cms_text_area (1.2ms)
+Rendered cms/form_builder/_cms_text_field (0.2ms)
+Rendered cms/form_builder/_cms_text_field (0.2ms)
+  [4;36;1mCategoryType Load (0.3ms)[0m   [0;1mSELECT * FROM "category_types" WHERE (category_types.name = 'Event') LIMIT 1[0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" WHERE (((categories.parent_id is null) AND ("categories".category_type_id = 1)) AND ("categories".category_type_id = 1)) ORDER BY name[0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories".parent_id = 1) ORDER BY name[0m
+Rendered cms/form_builder/_cms_drop_down (0.5ms)
+Rendered cms/form_builder/_cms_tag_list (5.9ms)
+Rendered cms/form_builder/_cms_text_editor (1.8ms)
+Rendered cms/events/_form (25.3ms)
+Rendered layouts/cms/_head (2.3ms)
+Rendered layouts/_cms_toolbar (0.9ms)
+  [4;35;1mContentTypeGroup Load (0.4ms)[0m   [0mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;36;1mContentTypeGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 3) [0m
+  [4;35;1mContentType Load (0.4ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 68ms (View: 48, DB: 5) | 200 OK [http://localhost/cms/events/new]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:47:54) [GET]
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.9ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.2ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 8ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::EventsController#create (for 127.0.0.1 at 2009-05-04 13:51:31) [POST]
+  Parameters: {"authenticity_token"=>"Ph121fodb9eCM+2t19F8cpvOnyUuZC2Ng3QQ4sFQEYI=", "event"=>{"name"=>"BrowserCMSConf", "connect_to_container"=>"", "publish_on_save"=>"true", "body"=>"<p>This is about all things BrowserCMS</p>", "lock_version"=>"0", "category_id"=>"1", "description"=>"Duis facilisis! Donec vulputate lectus adipiscing ligula. Proin rhoncus nibh. Phasellus tellus purus, porttitor ac, dignissim eu, eleifend eleifend, diam. Phasellus lacinia ipsum eu mi! Phasellus varius erat et purus ultrices dapibus? Suspendisse sit amet justo quis libero venenatis egestas. Quisque viverra mattis risus. Aenean eget ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean facilisis. Integer aliquet urna id eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget nunc. Phasellus a quam. Pellentesque hendrerit, dui in imperdiet congue, mi est suscipit purus; at sagittis purus risus vitae dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus sed.\r\n", "starts_on"=>"05/28/2009", "tag_list"=>"BrowserCMS BrowserMedia", "contact_email"=>"browsercmsconf@browsermedia.com", "more_info_url"=>"", "registration_url"=>"", "location"=>"7735 Old Georgetown Road, Bethesda, MD 21084", "ends_on"=>"05/29/2009", "connect_to_page_id"=>""}, "dhtml_selector"=>""}
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.8ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Event') LIMIT 1[0m
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("name", "updated_at", "body", "updated_by_id", "published", "lock_version", "created_by_id", "version", "starts_on", "description", "category_id", "archived", "contact_email", "deleted", "more_info_url", "registration_url", "ends_on", "location", "created_at") VALUES('BrowserCMSConf', '2009-05-04 17:51:31', '<p>This is about all things BrowserCMS</p>', 1, 't', 0, 1, 1, '2009-05-28', 'Duis facilisis! Donec vulputate lectus adipiscing ligula. Proin rhoncus nibh. Phasellus tellus purus, porttitor ac, dignissim eu, eleifend eleifend, diam. Phasellus lacinia ipsum eu mi! Phasellus varius erat et purus ultrices dapibus? Suspendisse sit amet justo quis libero venenatis egestas. Quisque viverra mattis risus. Aenean eget ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean facilisis. Integer aliquet urna id eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget nunc. Phasellus a quam. Pellentesque hendrerit, dui in imperdiet congue, mi est suscipit purus; at sagittis purus risus vitae dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus sed.
+', 1, 'f', 'browsercmsconf@browsermedia.com', 'f', '', '', '2009-05-29', '7735 Old Georgetown Road, Bethesda, MD 21084', '2009-05-04 17:51:31')[0m
+  [4;35;1mEvent::Version Load (0.1ms)[0m   [0mSELECT * FROM "event_versions" WHERE ("event_versions".event_id = NULL) [0m
+  [4;36;1mEvent::Version Create (0.2ms)[0m   [0;1mINSERT INTO "event_versions" ("event_id", "name", "updated_at", "body", "updated_by_id", "published", "created_by_id", "version", "starts_on", "description", "category_id", "archived", "version_comment", "contact_email", "deleted", "more_info_url", "registration_url", "ends_on", "location", "created_at") VALUES(1, 'BrowserCMSConf', '2009-05-04 17:51:31', '<p>This is about all things BrowserCMS</p>', 1, 't', 1, 1, '2009-05-28', 'Duis facilisis! Donec vulputate lectus adipiscing ligula. Proin rhoncus nibh. Phasellus tellus purus, porttitor ac, dignissim eu, eleifend eleifend, diam. Phasellus lacinia ipsum eu mi! Phasellus varius erat et purus ultrices dapibus? Suspendisse sit amet justo quis libero venenatis egestas. Quisque viverra mattis risus. Aenean eget ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean facilisis. Integer aliquet urna id eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget nunc. Phasellus a quam. Pellentesque hendrerit, dui in imperdiet congue, mi est suscipit purus; at sagittis purus risus vitae dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus sed.
+', 1, 'f', 'Created', 'browsercmsconf@browsermedia.com', 'f', '', '', '2009-05-29', '7735 Old Georgetown Road, Bethesda, MD 21084', '2009-05-04 17:51:31')[0m
+  [4;35;1mPage Load Including Associations (0.3ms)[0m   [0mSELECT "pages"."id" AS t0_r0, "pages"."version" AS t0_r1, "pages"."lock_version" AS t0_r2, "pages"."name" AS t0_r3, "pages"."title" AS t0_r4, "pages"."path" AS t0_r5, "pages"."template_file_name" AS t0_r6, "pages"."description" AS t0_r7, "pages"."keywords" AS t0_r8, "pages"."language" AS t0_r9, "pages"."cacheable" AS t0_r10, "pages"."hidden" AS t0_r11, "pages"."published" AS t0_r12, "pages"."deleted" AS t0_r13, "pages"."archived" AS t0_r14, "pages"."created_by_id" AS t0_r15, "pages"."updated_by_id" AS t0_r16, "pages"."created_at" AS t0_r17, "pages"."updated_at" AS t0_r18, "connectors"."id" AS t1_r0, "connectors"."page_id" AS t1_r1, "connectors"."page_version" AS t1_r2, "connectors"."connectable_id" AS t1_r3, "connectors"."connectable_type" AS t1_r4, "connectors"."connectable_version" AS t1_r5, "connectors"."container" AS t1_r6, "connectors"."position" AS t1_r7, "connectors"."created_at" AS t1_r8, "connectors"."updated_at" AS t1_r9 FROM "pages" LEFT OUTER JOIN "connectors" ON connectors.page_id = pages.id WHERE (((connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 0) AND (pages.deleted = 'f')) AND (connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 0)) [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'BrowserCMS') LIMIT 1[0m
+  [4;35;1mTag Exists (0.1ms)[0m   [0mSELECT "tags".id FROM "tags" WHERE ("tags"."name" = 'BrowserCMS') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "updated_at", "created_at") VALUES('BrowserCMS', '2009-05-04 17:51:31', '2009-05-04 17:51:31')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'BrowserMedia') LIMIT 1[0m
+  [4;36;1mTag Exists (0.1ms)[0m   [0;1mSELECT "tags".id FROM "tags" WHERE ("tags"."name" = 'BrowserMedia') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "updated_at", "created_at") VALUES('BrowserMedia', '2009-05-04 17:51:31', '2009-05-04 17:51:31')[0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 1 AND "taggings".taggable_type = 'Event') [0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("updated_at", "tag_id", "taggable_version", "taggable_type", "taggable_id", "created_at") VALUES('2009-05-04 17:51:31', 1, NULL, 'Event', 1, '2009-05-04 17:51:31')[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("updated_at", "tag_id", "taggable_version", "taggable_type", "taggable_id", "created_at") VALUES('2009-05-04 17:51:31', 2, NULL, 'Event', 1, '2009-05-04 17:51:31')[0m
+Redirected to http://localhost:3000/cms/events/1
+Completed in 136ms (DB: 4) | 302 Found [http://localhost/cms/events]
+
+
+Processing Cms::EventsController#show (for 127.0.0.1 at 2009-05-04 13:51:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPermission Load Including Associations (0.9ms)[0m   [0;1mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;35;1mContentType Load (0.3ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Event') LIMIT 1[0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) AND (events.deleted = 'f') [0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/show
+Rendered cms/blocks/_toolbar_for_member (2.2ms)
+Rendered cms/blocks/_toolbar (2.6ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(DISTINCT "pages".id) AS count_all FROM "pages" LEFT OUTER JOIN "connectors" ON connectors.page_id = pages.id WHERE (((connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 1) AND (pages.deleted = 'f')) AND (connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(DISTINCT "pages".id) AS count_all FROM "pages" LEFT OUTER JOIN "connectors" ON connectors.page_id = pages.id WHERE (((connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 1) AND (pages.deleted = 'f')) AND (connectors.connectable_id = 1 and connectors.connectable_type = 'Event' and connectors.connectable_version = 1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) AND (events.deleted = 'f') [0m
+Rendering connectable Event #1
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/cms/_head (1.2ms)
+Rendered layouts/_cms_toolbar (0.8ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 3) [0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 56ms (View: 30, DB: 6) | 200 OK [http://localhost/cms/events/1]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:51:32) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::CategoryTypesController#index (for 127.0.0.1 at 2009-05-04 13:51:38) [GET]
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.8ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'CategoryType') LIMIT 1[0m
+  [4;35;1mCategoryType Load (0.5ms)[0m   [0mSELECT * FROM "category_types" ORDER BY category_types.name LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (0.5ms)
+Rendered cms/blocks/_toolbar (0.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" WHERE ("categories".category_type_id = 1) [0m
+Rendered layouts/cms/_head (1.1ms)
+Rendered layouts/_cms_toolbar (1.1ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 35ms (View: 26, DB: 5) | 200 OK [http://localhost/cms/category_types]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:51:38) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 8ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::TagsController#index (for 127.0.0.1 at 2009-05-04 13:51:39) [GET]
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/index
+Rendered cms/blocks/_toolbar_for_collection (0.6ms)
+Rendered cms/blocks/_toolbar (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "taggings" WHERE ("taggings".tag_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "taggings" WHERE ("taggings".tag_id = 2) [0m
+Rendered layouts/cms/_head (64.8ms)
+Rendered layouts/_cms_toolbar (0.9ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.4ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 99ms (View: 90, DB: 5) | 200 OK [http://localhost/cms/tags]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:51:40) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.8ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 8ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::TagsController#show (for 127.0.0.1 at 2009-05-04 13:51:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 2) [0m
+Rendering template within layouts/cms/content_library
+Rendering cms/blocks/show
+Rendered cms/blocks/_toolbar_for_member (2.0ms)
+Rendered cms/blocks/_toolbar (2.4ms)
+Rendered layouts/cms/_head (1.1ms)
+Rendered layouts/_cms_toolbar (0.8ms)
+  [4;36;1mContentTypeGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "content_type_groups" ORDER BY content_type_groups.id[0m
+  [4;35;1mContentTypeGroup Load (0.2ms)[0m   [0mSELECT * FROM "content_type_groups" WHERE ("content_type_groups"."id" = 2) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 1) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 2) ORDER BY content_types.id[0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "content_types" WHERE ("content_types".content_type_group_id = 3) ORDER BY content_types.id[0m
+Rendered layouts/cms/_footer (0.1ms)
+Completed in 30ms (View: 21, DB: 4) | 200 OK [http://localhost/cms/tags/2]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:51:47) [GET]
+  [4;36;1mUser Load (1.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.3ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 10ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
+
+
+Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-04 13:51:51) [GET]
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPermission Load Including Associations (0.9ms)[0m   [0mSELECT "permissions"."id" AS t0_r0, "permissions"."name" AS t0_r1, "permissions"."full_name" AS t0_r2, "permissions"."description" AS t0_r3, "permissions"."for_module" AS t0_r4, "permissions"."created_at" AS t0_r5, "permissions"."updated_at" AS t0_r6, "groups"."id" AS t1_r0, "groups"."name" AS t1_r1, "groups"."code" AS t1_r2, "groups"."group_type_id" AS t1_r3, "groups"."created_at" AS t1_r4, "groups"."updated_at" AS t1_r5, "users"."id" AS t2_r0, "users"."login" AS t2_r1, "users"."first_name" AS t2_r2, "users"."last_name" AS t2_r3, "users"."email" AS t2_r4, "users"."crypted_password" AS t2_r5, "users"."salt" AS t2_r6, "users"."created_at" AS t2_r7, "users"."updated_at" AS t2_r8, "users"."expires_at" AS t2_r9, "users"."remember_token" AS t2_r10, "users"."remember_token_expires_at" AS t2_r11 FROM "permissions" LEFT OUTER JOIN "group_permissions" ON ("permissions"."id" = "group_permissions"."permission_id") LEFT OUTER JOIN "groups" ON ("groups"."id" = "group_permissions"."group_id") LEFT OUTER JOIN "user_group_memberships" ON ("groups"."id" = "user_group_memberships"."group_id") LEFT OUTER JOIN "users" ON ("users"."id" = "user_group_memberships"."user_id") WHERE (users.id = 1) [0m
+  [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM "content_types" WHERE ("content_types"."name" = 'Tag') LIMIT 1[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" LIMIT 15 OFFSET 0[0m
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/cms/tags.js]
