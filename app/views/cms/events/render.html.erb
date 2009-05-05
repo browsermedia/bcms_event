@@ -3,7 +3,7 @@
 <p><b>Ends On:</b> <%= @content_block.ends_on %></p>
 <p><b>Location:</b> <%= @content_block.location %></p>
 <p><b>Contact Email:</b> <%= @content_block.contact_email %></p>
-<p><b>Description:</b> <%= @content_block.description %></p>
+<p><b>Description:</b> <%= simple_format h(@content_block.description) %></p>
 <p><b>More Info Url:</b> <%= @content_block.more_info_url %></p>
 <p><b>Registration Url:</b> <%= @content_block.registration_url %></p>
 <p><b>Category:</b> <%= @content_block.category_name %></p>

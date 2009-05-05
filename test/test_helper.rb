@@ -3,6 +3,9 @@ require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
 
 class ActiveSupport::TestCase
+  require File.dirname(__FILE__) + '/test_logging'
+  include TestLogging
+  include SampleData
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the
   # test database remains unchanged so your fixtures don't have to be reloaded
@@ -35,4 +38,36 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def create_baseline_data!
+    @section = Section.create!(:name => "My Site", :path => "/")
+    Group.create!(:name => "Guest", :code => "guest", :sections => [@section])
+    @page_template = PageTemplate.create!(:name => "test", :format => "html", :handler => "erb", :body => %q{<html>
+      <head>
+        <title>
+          <%= page_title %>
+        </title>
+        <%= yield :html_head %>
+      </head>
+      <body>
+        <%= cms_toolbar %>
+        <%= container :main %>
+      </body>
+    </html>})
+
+    @events_page = Page.create!(:name => "Events", :section => @section, :path => "/events", :template_file_name => "test.html.erb")
+    @event_page = Page.create!(:name => "Event", :section => @section, :path => "/event", :template_file_name => "test.html.erb")
+
+    @event_route = @event_page.page_routes.build(
+      :name => "Event",
+      :pattern => "/events/:year/:month/:day/:slug",
+      :code => "@event = Event.published.starts_on(params).with_slug(params[:slug]).first")
+    @event_route.add_condition(:method, "get")
+    @event_route.add_requirement(:year, '\d{4,}')
+    @event_route.add_requirement(:month, '\d{2,}')
+    @event_route.add_requirement(:day, '\d{2,}')
+    @event_route.save!    
+
+    @events_page.publish!
+    @event_page.publish!
+  end  
 end

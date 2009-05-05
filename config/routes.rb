@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.namespace('cms') {|cms| cms.content_blocks :events }
+  map.routes_for_browser_cms_event_module
 
   map.routes_for_browser_cms
 

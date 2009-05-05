@@ -1,0 +1,18 @@
+<div>
+  <% @events.group_by{|e| e.starts_on.year}.sort_by(&:first).reverse.each do |year, events_grouped_by_year| %>
+    <!-- <%= year %> -->
+    <% events_grouped_by_year.group_by{|e| e.starts_on.month}.sort_by(&:first).reverse.each do |month, events_grouped_by_month| %>
+      <b class="month"><%= Date::MONTHNAMES[month] %></b>
+      <% for event in events_grouped_by_month.sort_by(&:starts_on).reverse %>
+        <div id="event_<%= event.id %>" class="event">
+          <span class="event_starts_on"><b><%= event.starts_on.to_s(:long) %></b></span>
+          <br/>
+          <%= link_to "<b>#{h(event.name)}</b>", event_path(event.route_params) %><br/>
+          <% unless event.description.blank? -%>
+            <p><%= simple_format h(event.description) %></p>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

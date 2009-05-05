@@ -2,6 +2,7 @@ class CreateEvents < ActiveRecord::Migration
   def self.up
     create_versioned_table :events do |t|
       t.string :name 
+      t.string :slug
       t.date :starts_on 
       t.date :ends_on 
       t.string :location 
@@ -17,6 +18,30 @@ class CreateEvents < ActiveRecord::Migration
     end
     
     ContentType.create!(:name => "Event", :group_name => "Event")
+    
+    event_page = Page.create!(
+      :name => "Event", 
+      :path => "/event", 
+      :section => Section.root.first,
+      :template_file_name => "default.html.erb")
+      
+    EventPortlet.create!(
+      :name => "Event Portlet",
+      :template => EventPortlet.default_template,
+      :connect_to_page_id => event_page.id,
+      :connect_to_container => "main",
+      :publish_on_save => true)
+      
+    route = event_page.page_routes.build(
+      :name => "Event",
+      :pattern => "/events/:year/:month/:day/:slug",
+      :code => "@event = Event.published.starts_on(params).with_slug(params[:slug]).first")
+    route.add_condition(:method, "get")
+    route.add_requirement(:year, '\d{4,}')
+    route.add_requirement(:month, '\d{2,}')
+    route.add_requirement(:day, '\d{2,}')
+    route.save!    
+    
   end
 
   def self.down
