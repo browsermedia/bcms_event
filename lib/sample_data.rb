@@ -58,4 +58,5 @@ module SampleData
       :starts_on => Date.parse("2009-05-05"),
       :publish_on_save => false)
   end
+  extend self
 end

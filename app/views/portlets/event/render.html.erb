@@ -1,1 +1,10 @@
-<%=h @portlet.name %>
+<p><b>Name:</b> <%= @event.name %></p>
+<p><b>Starts On:</b> <%= @event.starts_on %></p>
+<p><b>Ends On:</b> <%= @event.ends_on %></p>
+<p><b>Location:</b> <%= @event.location %></p>
+<p><b>Contact Email:</b> <%= @event.contact_email %></p>
+<p><b>Description:</b> <%= simple_format h(@event.description) %></p>
+<p><b>More Info Url:</b> <%= @event.more_info_url %></p>
+<p><b>Registration Url:</b> <%= @event.registration_url %></p>
+<p><b>Category:</b> <%= @event.category_name %></p>
+<p><b>Body:</b> <%= @event.body %></p>
