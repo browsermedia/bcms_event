@@ -15,7 +15,7 @@ class EventsPortletTest < ActionController::TestCase
   
   def test_show_post
     get :show, :path => ["events"]
-    #log @response.body
+    log @response.body
     assert_response :success
     assert_select "title", "Events"
     
@@ -24,6 +24,7 @@ class EventsPortletTest < ActionController::TestCase
       assert_select "a b", "Martin Luther King Day"
     end
     
+    #TODO: How do we get the most recent published versions of events?
     assert_select ".event a b", {:text => "Unpublished", :count => 0}
     
   end
