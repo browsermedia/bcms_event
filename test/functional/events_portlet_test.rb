@@ -24,7 +24,6 @@ class EventsPortletTest < ActionController::TestCase
       assert_select "a b", "Martin Luther King Day"
     end
     
-    #TODO: How do we get the most recent published versions of events?
     assert_select ".event a b", {:text => "Unpublished", :count => 0}
     
   end
