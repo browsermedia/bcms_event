@@ -26,11 +26,18 @@ class CreateEvents < ActiveRecord::Migration
       :template_file_name => "default.html.erb")
       
     EventPortlet.create!(
-      :name => "Event Portlet",
+      :name => "Event Details",
       :template => EventPortlet.default_template,
       :connect_to_page_id => event_page.id,
       :connect_to_container => "main",
       :publish_on_save => true)
+      
+    EventsPortlet.create!(
+      :name => "Event List",
+      :template => EventsPortlet.default_template,
+      :connect_to_page_id => event_page.id,
+      :connect_to_container => "main",
+      :publish_on_save => true)      
       
     route = event_page.page_routes.build(
       :name => "Event",
