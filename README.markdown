@@ -5,7 +5,7 @@ An Event Module for BrowserCMS. Allows contributors to create and post new upcom
 ## Features
 
 * Events - Contributors can create Event content that represent Single or Multiday Events.
-* Events Lists - Allows a complete listing of all published events in a reverse chronological order along with names and descriptions.
+* Event Lists - Allows a complete listing of all published events in a reverse chronological order along with names and descriptions.
 * Event Details - Allows visitors to see the complete details for each Event, including the ability link to external Event Registration pages.
 * SEO Friendly URLs - Each event will have its own custom URL to display itself.
 * Customizable Views - Event listings and detail pages can be styled using editable Portlet views.
@@ -15,6 +15,7 @@ An Event Module for BrowserCMS. Allows contributors to create and post new upcom
 The Event module installs like other BrowserCMS modules.
 
     gem install bcms_event
+	rails g cms:install bcms_event
 
 See http://guides.browsercms.org/installing_modules.html for further details.
 
@@ -22,8 +23,9 @@ See http://guides.browsercms.org/installing_modules.html for further details.
 
 When installing this module, it will create the following new pages/blocks.
 
-* Events Page - A new Page 'Event' will be created at the root of the site, with an 'Event' portlet added. (Allows this page to display any Event)
-* Events Route - A dynamic route to allow specific events to be shown by the Event page using a route like /events/:year/:month/:day/:slug
+* Event Page - A new Page 'Event' will be created at the root of the site, with an 'Event' portlet added. (Allows this page to display any Event)
+* Events Page - A new Page 'Events' that will list all published events in a list.
+* Event Route - A dynamic route to allow specific events to be shown by the Event page using a route like /events/:year/:month/:day/:slug
 
 ## Event Details
 

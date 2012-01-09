@@ -1,4 +1,5 @@
-<p><b>Name:</b> <%= @event.name %></p>
+<% if @event %>
+<p><b>Name:</b> <%= @event.name.html_safe %></p>
 <p><b>Starts On:</b> <%= @event.starts_on %></p>
 <p><b>Ends On:</b> <%= @event.ends_on %></p>
 <p><b>Location:</b> <%= @event.location %></p>
@@ -7,4 +8,8 @@
 <p><b>More Info Url:</b> <%= @event.more_info_url %></p>
 <p><b>Registration Url:</b> <%= @event.registration_url %></p>
 <p><b>Category:</b> <%= @event.category_name %></p>
-<p><b>Body:</b> <%= @event.body %></p>
+<p><b>Body:</b> <%= @event.body.html_safe %></p>
+<% else -%>
+  <b>Missing required parameter</b><br/>
+  This portlet expects a request parameter 'event_id'. Be sure the calling page provides it.
+<% end -%>

@@ -7,9 +7,9 @@
         <div id="event_<%= event.id %>" class="event">
           <span class="event_starts_on"><b><%= event.starts_on.to_s(:long) %></b></span>
           <br/>
-          <%= link_to "<b>#{h(event.name)}</b>", event_path(event.route_params) %><br/>
+          <%= link_to "<b>#{h(event.name)}</b>".html_safe, event_path(event.route_params) %><br/>
           <% unless event.description.blank? -%>
-            <p><%= simple_format h(event.description) %></p>
+            <p><%= simple_format(event.description).html_safe %></p>
           <% end %>
         </div>
       <% end %>

@@ -1,5 +1,7 @@
 class EventsPortlet < Portlet
     
+  enable_template_editor true
+    
   def render
     if self.category_id.blank?
       @events = Event.published.all

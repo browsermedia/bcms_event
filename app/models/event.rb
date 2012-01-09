@@ -5,7 +5,7 @@ class Event < ActiveRecord::Base
   before_validation :set_slug
   validates_presence_of :name, :slug, :starts_on
 
-  named_scope :starts_on, lambda {|date|
+  scope :starts_on, lambda {|date|
     d = if date.kind_of?(Hash)
       Date.new(date[:year].to_i, date[:month].to_i, date[:day].to_i)
     else
@@ -15,7 +15,7 @@ class Event < ActiveRecord::Base
     {:conditions => ["events.starts_on = ?", d]}
   }
       
-  named_scope :with_slug, lambda{|slug| {:conditions => ["events.slug = ?",slug]}}  
+  scope :with_slug, lambda{|slug| {:conditions => ["events.slug = ?",slug]}}  
 
   def self.default_order
     "starts_on desc"

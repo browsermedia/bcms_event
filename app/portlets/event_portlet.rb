@@ -1,5 +1,7 @@
 class EventPortlet < Portlet
     
+  enable_template_editor true
+  
   def render
     # @event should already be set by the page route
     if !@event && params[:event_id]
