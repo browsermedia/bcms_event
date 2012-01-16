@@ -21,8 +21,7 @@ Gem::Specification.new do |spec|
                     'script/**/*',
                     'app/controllers/application_controller.rb',
                     'app/helpers/application_helper.rb',
-                    'app/layouts/templates/**/*',
-                    'lib/tasks/*']
+                    'app/layouts/templates/**/*']
   spec.require_paths = ["lib"]
   spec.extra_rdoc_files = ["README.markdown" ]
   spec.add_dependency(%q<browsercms>, ["~> 3.3.0"])

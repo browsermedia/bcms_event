@@ -12,12 +12,15 @@ An Event Module for BrowserCMS. Allows contributors to create and post new upcom
 
 ## Installation
 
-The Event module installs like other BrowserCMS modules.
+The Event module installs like other [BrowserCMS modules](http://guides.browsercms.org/installing_modules.html).
 
     gem install bcms_event
 	rails g cms:install bcms_event
 
-See http://guides.browsercms.org/installing_modules.html for further details.
+If you are adding bcms_event to a project with an existing database, you will very likely need to manually seed the database like so:
+
+	rake db:seed:bcms_event
+	
 
 ### What's installed
 

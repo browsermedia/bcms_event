@@ -8,3 +8,8 @@ BcmsEvent::Application.load_tasks
 
 require 'bundler'
 Bundler::GemHelper.install_tasks
+
+desc "Load Sample Data"
+task :load_sample_data => :environment do
+  SampleData.create_sample_data!
+end
