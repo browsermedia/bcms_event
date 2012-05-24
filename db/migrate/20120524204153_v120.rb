@@ -1,3 +1,5 @@
+require 'cms/upgrades/v3_5_0'
+
 # Upgrades the bcms_event module to v1.2.0
 class V120 < ActiveRecord::Migration
   def change
