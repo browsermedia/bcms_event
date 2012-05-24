@@ -30,7 +30,7 @@ class EventsPortletTest < ActionController::IntegrationTest
   end
   
   test "setup" do
-    p = Portlet.find_by_name("Show Event")
+    p = Cms::Portlet.find_by_name("Show Event")
     assert_not_nil p
     
   end
@@ -63,7 +63,7 @@ class EventsPortletTest < ActionController::IntegrationTest
                }
     defaults.merge!(options)
     path = defaults.delete(:path)
-    defaults[:connect_to_page_id] = Page.with_path(path).first.id 
+    defaults[:connect_to_page_id] = Cms::Page.with_path(path).first.id 
     EventPortlet.create!(defaults)
   end
 end

@@ -1,2 +1,4 @@
-require 'bcms_event/engine'
-require 'bcms_event/routes'
+require "bcms_event/engine"
+
+module BcmsEvent
+end
