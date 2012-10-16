@@ -1,6 +1,7 @@
 require 'cms/module_installation'
 
 class BcmsEvent::InstallGenerator < Cms::ModuleInstallation
+  add_migrations_directory_to_source_root __FILE__
 
   def copy_migrations
     rake 'bcms_event:install:migrations'
