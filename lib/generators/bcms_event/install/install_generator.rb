@@ -9,7 +9,7 @@ class BcmsEvent::InstallGenerator < Cms::ModuleInstallation
 
   def add_seed_data_to_project
     copy_file "../bcms_event.seeds.rb", "db/bcms_event.seeds.rb"
-    append_to_file "db/seeds.rb", "load File.expand_path('../bcms_event.seeds.rb', __FILE__)"
+    append_to_file "db/seeds.rb", "load File.expand_path('../bcms_event.seeds.rb', __FILE__)\n"
   end
   
   def add_routes
